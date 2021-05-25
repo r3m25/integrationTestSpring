@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Personas</title>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+			<th>Detalles</th>
+		</tr>
+		<tr th:each="persona : ${personas}">
+			<td th:text="${persona.id}">ID_VALUE</td>
+			<td th:text="${persona.nombre}">NOMBRE_VALUE</td>
+			<td th:text="${persona.apellido}">APELLIDO_VALUE</td>
+			<td><a th:href="@{/personas/{id}(id=${persona.id})}" th:text="click">DETALLES_LINK_VALUE</a></td>
+		</tr>
+	</table>
+	<br />
+	<a th:href="@{/}"
+	th:text="Inicio">INICIO_LINK</a>
+</body>
+
+</html>

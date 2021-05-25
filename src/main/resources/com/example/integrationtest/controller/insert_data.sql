@@ -1,0 +1,3 @@
+INSERT INTO person (id, person_name, last_name, document, age, profession) VALUES ('131', 'nombre_31', 'apellido_31', '0000031', 51, 'profesion_31');
+INSERT INTO person (id, person_name, last_name, document, age, profession) VALUES ('132', 'nombre_32', 'apellido_32', '0000032', 52, 'profesion_32');
+INSERT INTO person (id, person_name, last_name, document, age, profession) VALUES ('133', 'nombre_33', 'apellido_33', '0000033', 53, 'profesion_33');
